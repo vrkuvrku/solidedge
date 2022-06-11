@@ -11,10 +11,10 @@ function App() {
   return (
     <html>
       <head>
-        <title>Hello from JSX</title>
+        <title>BankIdentity</title>
       </head>
       <body>
-        <h1>Hello world</h1>
+        <h1>BankIdentity</h1>
       </body>
     </html>
   );
