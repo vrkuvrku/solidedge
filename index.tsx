@@ -14,6 +14,7 @@ const pkgs: Pkg[] = data.items
 
 function App() {
 	const items = pkgs.map(pkg => <li>{pkg.name} - {pkg.description}</li>)
+	const cwd = Deno.cwd()
   return (
     <html>
       <head>
@@ -21,7 +22,8 @@ function App() {
       </head>
       <body>
         <h1>BankIdentity</h1>
-				{items}
+				<pre>{cwd}</pre>
+				<ul>{items}</ul>
       </body>
     </html>
   );
